@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=M+PLUS+1+Code:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+    <div id="title">NumberPuzzle</div>
+    <div id="hint">2つの数字をクリックして正しく並び変えよう!</div>
+
+    <div id="main">
+        <img src="images/1.png" id="1" class="number" onclick="clickNumber(1)" width="100px">
+        <span class="operator">+</span>
+        <img src="images/2.png" id="2" class="number" onclick="clickNumber(2)" width="100px">
+        <span class="operator">=</span>
+        <img src="images/3.png" id="3" class="number" onclick="clickNumber(3)" width="100px">
+        <br>
+        <img src="images/4.png" id="4" class="number" onclick="clickNumber(4)" width="100px">
+        <span class="operator">+</span>
+        <img src="images/5.png" id="5" class="number" onclick="clickNumber(5)" width="100px">
+        <span class="operator">=</span>
+        <img src="images/6.png" id="6" class="number" onclick="clickNumber(6)" width="100px">
+        <br>
+        <img src="images/7.png" id="7" class="number" onclick="clickNumber(7)" width="100px">
+        <span class="operator">+</span>
+        <img src="images/8.png" id="8" class="number" onclick="clickNumber(8)" width="100px">
+        <span class="operator">=</span>
+        <img src="images/9.png" id="9" class="number" onclick="clickNumber(9)" width="100px">
+        <br>
+    </div>
+    <button type="button" onclick="judge()">ANSWER</button>
+    <span id="status"></span>
+    <a id="clear_element" style="display: none;" href="https://twitter.com/share?text=NumberPuzzleをクリアした!&url=https://www.godofmegane.com/NumberPuzzle" onClick="window.open(encodeURI(decodeURI(this.href)), 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1'); return false;" rel="nofollow" class="twitter-link">
+        twitterでシェアしてくれよな!
+    </a>
+</body>
+</html>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
